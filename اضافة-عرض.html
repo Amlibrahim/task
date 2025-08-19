@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="color-scheme" content="light dark" />
+  <meta charset="UTF-8">
+ <meta name="color-scheme" content="light dark" />
+ <link rel="shortcut icon" href="./images/common/favicon.png" type="./images/common/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> اضافة عرض</title>
+
+<link rel="stylesheet"  href="./css/ar/bootstrap-mod.min.css">
+  <link rel="stylesheet" href="./css/ar/metisMenu.css">
+  <link rel="stylesheet" href="./lib/jquery-slimscroll/jquery.slimscroll.min.js">
+<link rel="stylesheet" type="text/css" href="./css/ar/datatables.css">
+  <link rel="stylesheet" href="./css/ar/style.min.css">
+  <link rel="stylesheet" href="./css/ar/dark-light.css">
+
+ 
+
+</head>
+
+<body class="light">
+<div class="container-page orange-color" id="container-page">
+
+
+
+  <div class="page-wrapper">
+      <!-- Start Top Heaser -->
+     <div class="top-header bg-primary1 position-relative">
+        <div class="site-logo  ">
+            <img src="./images/common/logo.png" class="big-logo  img-fluid mx-auto" alt="">
+            <img src="./images/common/small-logo.png" class="small-logo  img-fluid mx-auto " alt=""> 
+             <!-- ***** icon logo in small screen  ***** -->
+                <div class='d-inline-block d-lg-none '>
+                  <img src='./images/common/small-logo-color.png' alt='icon-logo' class='d-block mx-auto'>
+                </div> 
+        </div>
+        <header class="main-header py-2">
+            <div class="d-flex px-0  px-sm-3 align-items-center">
+                <a href="javascript:void(0)" class="open-close d-lg-block d-none  ">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                  </a>
+              
+                 <!-- start content top header -->
+               <div class='content-header d-flex align-items-center '>
+               
+                     <div class='search-input '>
+                      <form class="form-inline ">
+                          <button class="btn bg-transparent border-0 " type="submit">
+                              <i class="fa fa-search " aria-hidden="true"></i>
+
+                          </button>
+
+                          <input class="form-control "  placeholder="اكتب كلمة البحث ..."  >
+                        </form>
+                     </div>
+                         <div class='links '>
+                             <ul class='list-unstyled m-0 p-0 d-flex justify-content-end align-items-center'>
+                              
+                               <!-- ***** icon search in small screen ****-->
+                 <li class="nav-item d-lg-none d-inline-block SMC">
+
+                  <div class='d-block d-lg-none mr-3 mr-lg-0 '>
+                    
+                    <div class="cont-link">
+                      <i class="fa fa-search " aria-hidden="true"></i>
+                    </div>
+                   </div>
+                </li>
+                              <li class="nav-item dark-btn">
+                                <div class="cont-link">
+                                  <span id="theme">
+                                  </span>
+                                    <button id="theme-toggle" class="bg-transparent border-0">
+                                  
+                                  </button>
+                                </div>
+                              </li>
+                              <li class="nav-item ">
+                                <div class="cont-link"><a href='javascript:void(0)'>En</a></div>
+                              </li>
+                              <li class="nav-item ">
+                                <div class="dropdown">
+                                  <button class="dropdown-toggle border-0 bg-transparent p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="cont-link position-relative"> 
+                                      <i class="far fa-bell"></i>
+                                       <span class='NOTIFICATIONS '>
+                                        <small class='notification-badge  pulse'>18</small>
+                                     </span> 
+                                    </div>
+                                  </button>
+                                
+                                </div>
+                              </li>
+                              <li class="nav-item ">
+                                <div class="dropdown">
+                                  <button class="dropdown-toggle border-0 bg-transparent p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="cont-link position-relative"> <i class="fa-regular fa-envelope"></i>
+                                      <span class='NOTIFICATIONS '>
+                                        <small class='notification-badge  pulse green'>12</small>
+                                     </span> 
+                                    </div>
+                                  </button>
+                                  
+                                </div>
+                              </li>
+                             <li class="nav-item ">
+                                <div class="dropdown">
+                                  <button class="dropdown-toggle border-0 bg-transparent p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="cont-link position-relative logout-icon"> <i class="fa-solid fa-right-from-bracket"></i>
+                                      
+                                    </div>
+                                  </button>
+                                  
+                                </div>
+                              </li>
+                         
+                           <li class="nav-item d-lg-none d-inline-block ">
+                              <!-- ***** close & open Btn in small screen ******-->
+            <div class="openmenu text-center">
+            
+ <div class="cont-link">
+  <i class="fa-solid fa-ellipsis"></i>
+</div>
+             </div>
+                           </li>
+                           
+                          </ul>
+                         </div>
+                            
+                    
+                    
+                  </div>
+               
+            </div>
+        </header>
+    </div>
+    <!--    start side bar -->
+    <nav class="sidebar">
+      <div class="sidebar-nav slim-scroll">
+       <!-- ****** logo in hover & small menu ******-->
+        <img src="./images/common/logo.png" class="hover-menu mx-auto" alt="">
+
+        <ul class="metismenu  " id="menu">
+          <li class="stores">
+            
+
+            <a class="has-arrow link " href="javascript:void(0)" aria-expanded="false">
+              <b class="b1"></b><b class="b2"></b>
+
+             <i class="fa-solid fa-file-pen"></i>
+                <span class="hide-menu ">
+ادارة العروض
+                </span></a>
+            <ul class="my-second-level">
+               
+                <li class="N_l">
+                    <a href="اضافة-عرض.html" class="link">  اضافة عرض</a>
+
+                   
+                </li>
+               <li class="N_l">
+                    <a href="عرض-العروض.html" class="link">    عرض العروض</a>
+                </li>
+               
+             
+           
+        
+            </ul>
+        </li>
+
+        
+
+        
+
+
+         
+         
+        </ul>
+      </div>
+    </nav>
+    <main>
+       
+      <div class="main-content ">
+        <div class="row">
+          <!-------------------YOUR CONTENT HERE BEGIN ------------------>
+        
+     <div class="col-12 internal-page mb-3">
+      <div class="inner-box ">
+        <div class="title-box font-weight-bold">
+         اضافة عرض
+        </div>
+        <!-- مودال QR -->
+<!-- مودال QR -->
+<div class="modal fade" id="qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <div id="modalQRCode" class="my-2 d-flex justify-content-center"></div>
+        <h5 class="my-3 text-dark h4">تم حفظ البيانات بنجاح </h5>
+        <p>وتم توليد QR الخاص بالعرض</p>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <form id="offerForm" class="row p-4 my-form">
+    <div class="col-xl-3 mb-3 d-inline-flex justify-content-center">
+  
+  <div class="logo-uploader text-center">
+    <label for="logoInput" class="logo-circle">
+      <img id="previewLogo" src="images/common/default-logo.png" alt="" />
+    </label>
+    <input type="file" id="logoInput" accept="image/*" style="display: none;">
+    <label> تحميل  اللوجو</label>
+    <span id="logoFileError" class="error d-block mt-1"></span>
+  </div>
+</div>
+   <div class="col-xl-9">
+    <div class="row">
+    <div class="col-md-4 mb-3">
+      <label for="offerNumber">رقم العرض <span class="text-danger">*</span></label>
+      <input type="text" id="offerNumber" name="offerNumber" class="form-control">
+      <span id="offerNumberError" class="error"></span>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="recipient">الجهة الموجه لها العرض <span class="text-danger">*</span></label>
+      <select id="recipient" name="recipient" class="form-control">
+        <option value="">اختر الجهة...</option>
+        <option value="شركة A">شركة A</option>
+        <option value="شركة B">شركة B</option>
+        <option value="شركة C">شركة C</option>
+      </select>
+      <span id="recipientError" class="error"></span>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="offerDate">تاريخ العرض:</label>
+      <input type="date" id="offerDate" name="offerDate" class="form-control">
+      <span id="offerDateError" class="error"></span>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="offerDuration">مدة نفاذ العرض (أيام) <span class="text-danger">*</span></label>
+      <input type="number" id="offerDuration" name="offerDuration" min="1" max="20" class="form-control">
+      <span id="offerDurationError" class="error"></span>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="totalAmount">المبلغ الكلي <span class="text-danger">*</span></label>
+      <input type="text" id="totalAmount" name="totalAmount" class="form-control">
+      <span id="totalAmountError" class="error"></span>
+    </div>
+    <!-- رفع ملف العرض -->
+    <div class="col-md-4 mb-3">
+      <label for="offerFile">رفع ملف العرض </label>
+      <input type="file" id="offerFile" name="offerFile" class="form-control">
+      <span id="offerFileError" class="error"></span>
+      <div id="imagePreview" class="mt-2">
+        <img id="previewImg" src="" alt="معاينة الصورة" style="display:none; max-width:100%; border:1px solid #ccc; padding:5px;">
+      </div>
+    </div>
+    </div>
+   </div>
+
+    
+
+   
+
+
+    <div class="col-md-12 mb-3">
+      <label for="offerdetails">تفاصيل العرض</label>
+      <textarea id="offerdetails" name="offerdetails" class="form-control" cols="10" rows="10"></textarea>
+    </div>
+
+    <div class="col-md-3 mb-3 align-self-end">
+      <button type="submit" class="btn btn-secondary">حفظ</button>
+      <button type="button" onclick="clearForm()" class="btn btn btn-small btn-primary ">مسح </button>
+    </div>
+  </form>
+       
+      </div>
+     
+     </div> <!-- Top-Statistic -->
+
+
+   
+
+
+
+
+
+
+          </div> <!-- row -->
+
+
+          <!-------------------YOUR CONTENT HERE ENF ------------------>
+        </div>
+       
+    
+
+     
+    </main>
+  </div>
+</div>
+  <script src="./lib/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="./lib/popper.js/dist/popper.min.js"></script>
+  <script src="./lib/metisMenu/dist/metisMenu.min.js" charset="utf-8"></script>
+  <script src="./lib/jquery-slimscroll/jquery.slimscroll.js" charset="utf-8"></script>
+   <script src="./js/sweetalert.js"></script>
+<script src="./js/plu99.js" charset="utf-8"></script>
+<script src="./js/qrcode.min.js" charset="utf-8"></script>
+  <script src="./js/scripts.js" charset="utf-8"></script>
+ 
+  
+
+
+<script>
+window.onload = function () {
+  const offerDate = document.getElementById('offerDate');
+  const today = new Date().toISOString().split('T')[0];
+  offerDate.value = today;
+  offerDate.setAttribute('min', today);  //  not active date defore date today
+  document.getElementById('offerNumber').focus();
+};
+
+// ========== رفع ومعاينة الشعار ==========
+const logoInput = document.getElementById('logoInput');
+const previewLogo = document.getElementById('previewLogo');
+const logoError = document.getElementById('logoFileError');
+
+logoInput.addEventListener('change', async function () {
+  logoError.textContent = '';
+  const file = logoInput.files[0];
+  if (!file) return;
+
+  if (!file.type.startsWith('image/')) {
+    logoError.textContent = 'الملف المرفوع يجب أن يكون صورة.';
+    logoInput.value = '';
+    return;
+  }
+
+  if (file.size <= 250 * 1024) {
+    displayLogo(file);
+    return;
+  }
+
+  const resizedLogo = await resizeImage(file, 200, 180);
+  if (resizedLogo.size > 250 * 1024) {
+    logoError.textContent = 'حتى بعد التصغير، حجم اللوجو يتجاوز 250KB.';
+    logoInput.value = '';
+  } else {
+    displayLogo(resizedLogo);
+  }
+});
+
+function displayLogo(file) {
+  const reader = new FileReader();
+  reader.onload = function (e) {
+    previewLogo.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+// ========== رفع ومعاينة ملف العرض ==========
+const fileInput = document.getElementById('offerFile');
+const previewImg = document.getElementById('previewImg');
+const fileError = document.getElementById('offerFileError');
+let processedFile = null;
+
+fileInput.addEventListener('change', async function () {
+  fileError.textContent = '';
+  const file = fileInput.files[0];
+  previewImg.style.display = 'none';
+  previewImg.src = '';
+  processedFile = null;
+
+  if (!file) return;
+
+  if (file.size <= 250 * 1024) {
+    processedFile = file;
+    if (file.type.startsWith('image/')) displayImage(file);
+    return;
+  }
+
+  if (!file.type.startsWith('image/')) {
+    fileError.textContent = 'حجم الملف كبير ولا يمكن تصغيره.';
+    fileInput.value = '';
+    return;
+  }
+
+  const resized = await resizeImage(file, 200, 180);
+  if (resized.size > 250 * 1024) {
+    fileError.textContent = 'حتى بعد التصغير، حجم الصورة يتجاوز 250KB.';
+    fileInput.value = '';
+  } else {
+    processedFile = resized;
+    displayImage(resized);
+  }
+});
+
+function displayImage(file) {
+  const reader = new FileReader();
+  reader.onload = function (e) {
+    previewImg.src = e.target.result;
+    previewImg.style.display = 'block';
+  };
+  reader.readAsDataURL(file);
+}
+
+// ========== تصغير الصور ==========
+function resizeImage(file, width, height) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    const reader = new FileReader();
+    reader.onload = (e) => { img.src = e.target.result; };
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, width, height);
+      canvas.toBlob((blob) => {
+        resolve(new File([blob], file.name, { type: file.type }));
+      }, file.type, 0.7);
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+// ========== التحقق وحفظ وتوليد QR ==========
+document.getElementById('offerForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  let isValid = true;
+
+  const requiredFields = [
+    { id: 'offerNumber', errorId: 'offerNumberError', message: "رقم العرض حقل اجبارى." },
+    { id: 'recipient', errorId: 'recipientError', message: "الجهة الموجه لها العرض حقل اجبارى." },
+    { id: 'offerDate', errorId: 'offerDateError', message: "تاريخ العرض حقل اجبارى." },
+    { id: 'offerDuration', errorId: 'offerDurationError', message: "مدة نفاذ العرض حقل اجبارى." },
+    { id: 'totalAmount', errorId: 'totalAmountError', message: "المبلغ الكلي حقل اجبارى." }
+  ];
+
+  requiredFields.forEach(field => {
+    const el = document.getElementById(field.id);
+    const err = document.getElementById(field.errorId);
+    if (!el.value.trim()) {
+      err.textContent = field.message;
+      el.classList.add('error-border');
+      isValid = false;
+    } else {
+      err.textContent = '';
+      el.classList.remove('error-border');
+    }
+  });
+
+  if (isValid) {
+    const offerNum = document.getElementById('offerNumber').value;
+    const qrContainer = document.getElementById('modalQRCode');
+    if (!qrContainer) return;
+
+    let allOffers = JSON.parse(localStorage.getItem('offersList')) || [];
+    const isDuplicate = allOffers.some(offer => offer.offerNumber === offerNum);
+
+    if (isDuplicate) {
+      const offerNumberError = document.getElementById('offerNumberError');
+      offerNumberError.textContent = "رقم العرض مكرر. من فضلك أدخل رقمًا آخر.";
+      document.getElementById('offerNumber').classList.add('error-border');
+      return;
+    }
+
+    qrContainer.innerHTML = '';
+    new QRCode(qrContainer, {
+      text: offerNum,
+      width: 150,
+      height: 150,
+      colorDark: "#000",
+      colorLight: "#fff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+
+    const qrModal = new bootstrap.Modal(document.getElementById('qrModal'));
+    qrModal.show();
+
+    const formData = {
+      offerNumber: offerNum,
+      recipient: document.getElementById('recipient').value,
+      offerDate: document.getElementById('offerDate').value,
+      offerDuration: document.getElementById('offerDuration').value,
+      totalAmount: document.getElementById('totalAmount').value,
+      offerDetails: document.getElementById('offerdetails').value,
+    };
+
+    allOffers.push(formData);
+    localStorage.setItem('offersList', JSON.stringify(allOffers));
+    clearForm();
+  }
+});
+
+// ========== تحقق مباشر من رقم العرض ==========
+document.getElementById('offerNumber').addEventListener('input', checkOfferNumber);
+
+// ========== التحقق من الحقول ==========
+document.getElementById('recipient').addEventListener('change', checkRecipient);
+document.getElementById('offerDate').addEventListener('input', checkOfferDate);
+document.getElementById('offerDuration').addEventListener('input', checkOfferDuration);
+document.getElementById('totalAmount').addEventListener('input', checkTotalAmount);
+
+// ========== التحقق من رقم العرض وتكراره ==========
+function checkOfferNumber() {
+  const offerNumber = document.getElementById('offerNumber');
+  const offerNumberError = document.getElementById('offerNumberError');
+  const value = offerNumber.value.trim();
+
+  if (!value.match(/^\d{6}$/)) {
+    offerNumberError.textContent = "رقم العرض يجب أن يتكون من 6 أرقام فقط.";
+    offerNumber.classList.add('error-border');
+    offerNumber.classList.remove('success-border');
+    generateQRCode('');
+    return;
+  }
+
+  const allOffers = JSON.parse(localStorage.getItem('offersList')) || [];
+  const isDuplicate = allOffers.some(offer => offer.offerNumber === value);
+
+  if (isDuplicate) {
+    offerNumberError.textContent = "رقم العرض مكرر. يرجى إدخال رقم مختلف.";
+    offerNumber.classList.add('error-border');
+    offerNumber.classList.remove('success-border');
+    generateQRCode('');
+    return;
+  }
+
+  offerNumberError.textContent = '';
+  offerNumber.classList.remove('error-border');
+  offerNumber.classList.add('success-border');
+  generateQRCode(value);
+}
+
+function checkRecipient() {
+  const recipient = document.getElementById('recipient');
+  const recipientError = document.getElementById('recipientError');
+  if (recipient.value.trim() === '') {
+    recipientError.textContent = "الجهة الموجه لها العرض حقل اجبارى.";
+    recipient.classList.add('error-border');
+  } else {
+    recipientError.textContent = '';
+    recipient.classList.remove('error-border');
+    recipient.classList.add('success-border');
+  }
+}
+
+function checkOfferDate() {
+  const offerDate = document.getElementById('offerDate');
+  const offerDateError = document.getElementById('offerDateError');
+  const today = new Date().toISOString().split('T')[0];
+  if (offerDate.value && offerDate.value < today) {
+    offerDateError.textContent = "تاريخ العرض يجب أن يكون اليوم أو بعده.";
+    offerDate.classList.add('error-border');
+  } else {
+    offerDateError.textContent = '';
+    offerDate.classList.remove('error-border');
+    offerDate.classList.add('success-border');
+  }
+}
+
+function checkOfferDuration() {
+  const offerDuration = document.getElementById('offerDuration');
+  const offerDurationError = document.getElementById('offerDurationError');
+  offerDuration.value = offerDuration.value.replace(/^0+/, '');
+  if (offerDuration.value && (offerDuration.value <= 0 || offerDuration.value > 20)) {
+    offerDurationError.textContent = "مدة نفاذ العرض يجب أن تكون بين 1 و 20 يوم.";
+    offerDuration.classList.add('error-border');
+  } else if (offerDuration.value == '') {
+    offerDurationError.textContent = "هذا الحقل اجبارى";
+    offerDuration.classList.add('error-border');
+  } else {
+    offerDurationError.textContent = '';
+    offerDuration.classList.remove('error-border');
+    offerDuration.classList.add('success-border');
+  }
+}
+
+function checkTotalAmount() {
+  const totalAmount = document.getElementById('totalAmount');
+  const totalAmountError = document.getElementById('totalAmountError');
+  totalAmount.value = totalAmount.value.replace(/^0+/, '');
+
+  if (totalAmount.value && (!totalAmount.value.match(/^\d+(\.\d{1,2})?$/) || totalAmount.value <= 0)) {
+    totalAmountError.textContent = "المبلغ غير صحيح";
+    totalAmount.classList.add('error-border');
+  } else if (totalAmount.value == '') {
+    totalAmountError.textContent = "هذا الحقل اجبارى";
+    totalAmount.classList.add('error-border');
+  } else {
+    totalAmountError.textContent = '';
+    totalAmount.classList.remove('error-border');
+    totalAmount.classList.add('success-border');
+  }
+}
+
+// ========== توليد QR فوري ==========
+function generateQRCode(value) {
+  const qrcodeContainer = document.getElementById("qrcode");
+  if (!qrcodeContainer) return;
+
+  qrcodeContainer.innerHTML = '';
+  if (value && /^\d{6}$/.test(value)) {
+    new QRCode(qrcodeContainer, {
+      text: value,
+      width: 128,
+      height: 128,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  }
+}
+
+// ========== تفريغ النموذج ==========
+function clearForm() {
+  const fields = ['offerNumber', 'recipient', 'offerDate', 'offerDuration', 'totalAmount', 'offerdetails'];
+  fields.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.value = '';
+      el.classList.remove('error-border', 'success-border');
+    }
+  });
+
+  ['offerNumberError', 'recipientError', 'offerDateError', 'offerDurationError', 'totalAmountError', 'offerFileError', 'logoFileError']
+    .forEach(id => {
+      const errEl = document.getElementById(id);
+      if (errEl) errEl.textContent = '';
+    });
+
+  const fileInputs = ['offerFile', 'logoInput'];
+  fileInputs.forEach(id => {
+    const fileInput = document.getElementById(id);
+    if (fileInput) fileInput.value = '';
+  });
+
+  if (previewImg) {
+    previewImg.src = '';
+    previewImg.style.display = 'none';
+  }
+
+  if (previewLogo) {
+    previewLogo.src = 'images/common/default-logo.png';
+  }
+
+  document.getElementById('offerNumber').focus();
+}
+</script>
+
+
+
+ 
+ 
+
+  
+   
+   
+
+
+
+
+</body>
+
+</html>
