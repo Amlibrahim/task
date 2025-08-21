@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="color-scheme" content="light dark" />
+  <meta charset="UTF-8">
+ <meta name="color-scheme" content="light dark" />
+ <link rel="shortcut icon" href="./images/common/favicon.png" type="./images/common/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>  عرض العروض</title>
+
+<link rel="stylesheet"  href="./css/ar/bootstrap-mod.min.css">
+  <link rel="stylesheet" href="./css/ar/metisMenu.css">
+  <link rel="stylesheet" href="./lib/jquery-slimscroll/jquery.slimscroll.min.js">
+<link rel="stylesheet" type="text/css" href="./css/ar/datatables.css">
+  <link rel="stylesheet" href="./css/ar/style.min.css">
+  <link rel="stylesheet" href="./css/ar/dark-light.css">
+
+
+
+</head>
+
+<body class="light ">
+<div class="container-page container-page orange-color" id="container-page">
+
+
+  <div class="page-wrapper">
+      <!-- Start Top Heaser -->
+      <div class="top-header bg-primary1 position-relative">
+        <div class="site-logo  ">
+            <img src="./images/common/logo.png" class="big-logo  img-fluid mx-auto" alt="">
+            <img src="./images/common/small-logo.png" class="small-logo  img-fluid mx-auto " alt=""> 
+             <!-- ***** icon logo in small screen  ***** -->
+                <div class='d-inline-block d-lg-none '>
+                  <img src='./images/common/small-logo-color.png' alt='icon-logo' class='d-block mx-auto'>
+                </div> 
+        </div>
+        <header class="main-header py-2">
+            <div class="d-flex px-0  px-sm-3 align-items-center">
+                <a href="javascript:void(0)" class="open-close d-lg-block d-none  ">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                  </a>
+              
+                 <!-- start content top header -->
+               <div class='content-header d-flex align-items-center '>
+               
+                     <div class='search-input '>
+                      <form class="form-inline ">
+                          <button class="btn bg-transparent border-0 " type="submit">
+                              <i class="fa fa-search " aria-hidden="true"></i>
+
+                          </button>
+
+                          <input class="form-control "  placeholder="اكتب كلمة البحث ..."  >
+                        </form>
+                     </div>
+                         <div class='links '>
+                             <ul class='list-unstyled m-0 p-0 d-flex justify-content-end align-items-center'>
+                              
+                               <!-- ***** icon search in small screen ****-->
+                 <li class="nav-item d-lg-none d-inline-block SMC">
+
+                  <div class='d-block d-lg-none mr-3 mr-lg-0 '>
+                    
+                    <div class="cont-link">
+                      <i class="fa fa-search " aria-hidden="true"></i>
+                    </div>
+                   </div>
+                </li>
+                              <li class="nav-item dark-btn">
+                                <div class="cont-link">
+                                  <span id="theme">
+                                  </span>
+                                    <button id="theme-toggle" class="bg-transparent border-0">
+                                  
+                                  </button>
+                                </div>
+                              </li>
+                              <li class="nav-item ">
+                                <div class="cont-link"><a href='javascript:void(0)'>En</a></div>
+                              </li>
+                              <li class="nav-item ">
+                                <div class="dropdown">
+                                  <button class="dropdown-toggle border-0 bg-transparent p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="cont-link position-relative"> 
+                                      <i class="far fa-bell"></i>
+                                       <span class='NOTIFICATIONS '>
+                                        <small class='notification-badge  pulse'>18</small>
+                                     </span> 
+                                    </div>
+                                  </button>
+                                
+                                </div>
+                              </li>
+                              <li class="nav-item ">
+                                <div class="dropdown">
+                                  <button class="dropdown-toggle border-0 bg-transparent p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="cont-link position-relative"> <i class="fa-regular fa-envelope"></i>
+                                      <span class='NOTIFICATIONS '>
+                                        <small class='notification-badge  pulse green'>12</small>
+                                     </span> 
+                                    </div>
+                                  </button>
+                                  
+                                </div>
+                              </li>
+                             <li class="nav-item ">
+                                <div class="dropdown">
+                                  <button class="dropdown-toggle border-0 bg-transparent p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="cont-link position-relative logout-icon"> <i class="fa-solid fa-right-from-bracket"></i>
+                                      
+                                    </div>
+                                  </button>
+                                  
+                                </div>
+                              </li>
+                         
+                           <li class="nav-item d-lg-none d-inline-block ">
+                              <!-- ***** close & open Btn in small screen ******-->
+            <div class="openmenu text-center">
+            
+ <div class="cont-link">
+  <i class="fa-solid fa-ellipsis"></i>
+</div>
+             </div>
+                           </li>
+                           
+                          </ul>
+                         </div>
+                            
+                    
+                    
+                  </div>
+               
+            </div>
+        </header>
+    </div>
+    <!--    start side bar -->
+    <nav class="sidebar">
+      <div class="sidebar-nav slim-scroll">
+       <!-- ****** logo in hover & small menu ******-->
+        <img src="./images/common/logo.png" class="hover-menu mx-auto" alt="">
+
+        <ul class="metismenu  " id="menu">
+          <li class="stores">
+            
+
+            <a class="has-arrow link " href="javascript:void(0)" aria-expanded="false">
+              <b class="b1"></b><b class="b2"></b>
+
+             <i class="fa-solid fa-file-pen"></i>
+                <span class="hide-menu ">
+ادارة العروض
+                </span></a>
+            <ul class="my-second-level">
+               
+                <li class="N_l">
+                    <a href="اضافة-عرض.html" class="link">  اضافة عرض</a>
+
+                   
+                </li>
+               <li class="N_l">
+                    <a href="عرض-العروض.html" class="link">    عرض العروض</a>
+                </li>
+               
+             
+           
+        
+            </ul>
+        </li>
+
+        
+
+        
+
+
+         
+         
+        </ul>
+      </div>
+    </nav>
+    <main>
+       
+      <div class="main-content ">
+        <div class="row">
+          <!-------------------YOUR CONTENT HERE BEGIN ------------------>
+          <div class="col-12 mb-2 ">
+<div class="row align-items-center">
+  <div class="col-lg-6">
+    <h1 class="title-page f18 font-weight-bold d-inline-lg-block mb-2">
+       ادارة العروض
+
+      </h1>
+  </div>
+  <div class="col-6 text-lg-left">
+ 
+ <button class="custom-btn btn-3 " ><span> <a href="اضافة-عرض.html">  اضافة عرض 
+  
+ </a></span></button>
+
+ 
+
+  </div>
+</div>
+
+
+
+          </div>
+     <div class="col-12 internal-page mb-3">
+      <div class="inner-box ">
+        <div class="title-box font-weight-normal">
+         بحث
+        </div>
+<form class="my-form row p-3">
+  <div class="col-lg-4 col-xl-3 mb-3">
+    <label>رقم العرض</label>
+    <input type="text" id="offer-number" class="form-control" autofocus>
+    <span class="error"></span>
+  </div>
+
+  <div class="col-lg-4 col-xl-3 mb-3">
+    <label>الجهة الموجه لها العرض</label>
+    <select id="recipient" name="recipient" class="form-control">
+      <option value="">اختر الجهة...</option>
+      <option value="شركة A">شركة A</option>
+      <option value="شركة B">شركة B</option>
+      <option value="شركة C">شركة C</option>
+    </select>
+  </div>
+
+  <div class="col-lg-4 col-xl-3 mb-3">
+    <label>المبلغ</label>
+    <div class="row">
+      <div class="col-6">
+        <input type="text" id="min-amount" class="form-control text-center" placeholder="الادنى">
+        <span class="error"></span>
+      </div>
+      <div class="col-6 pr-0">
+        <input type="text" id="max-amount" class="form-control text-center" placeholder="الاقصى">
+        <span class="error"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-xl-3 mb-3">
+    <label>العرض نافذ</label>
+    <div class="row">
+      <div class="col-6">
+        <label><input type="radio" name="available" value="yes"> نعم</label>
+      </div>
+      <div class="col-6">
+        <label><input type="radio" name="available" value="no"> لا</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-xl-3 mb-3">
+    <label>التاريخ من</label>
+    <input type="date" id="from-date" class="form-control text-center">
+    <span class="error"></span>
+  </div>
+
+  <div class="col-lg-4 col-xl-3 mb-3">
+    <label>التاريخ الى</label>
+    <input type="date" id="to-date" class="form-control text-center">
+    <span class="error"></span>
+  </div>
+
+  <div class="col-sm-6 col-md-4 col-xl-3 mb-3 align-self-end">
+    <button type='button' class="custom-btn btn-3 search-btn"><span>بحث</span></button>
+    <button type="button" class="btn btn-small btn-primary reset-btn ms-2 px-4 mb-1">
+  <span>مسح</span>
+</button>
+  </div>
+</form>
+
+<div id="general-error" class="alert alert-danger d-none mx-3">يرجى إدخال بيانات للفلترة</div>
+
+
+
+
+
+      </div>
+     
+     </div> <!-- Top-Statistic -->
+
+
+     <div class="col-12 internal-page mb-3">
+      <div class="inner-box ">
+       
+        <div class='data-table p-3'>
+          <div class='table-responsive '>
+            <table
+              id="example"
+                class="  table table-striped table-bordered dt-responsive nowrap"
+                style="width:100%">
+                <thead>
+                    <tr>
+                        <th> رقم العرض</th>
+                                                <th>  التاريخ</th>
+
+                        <th>الجهة الموجه لها العرض  </th>
+                        <th> المبلغ   </th>
+                        <th> الحالة
+</th>
+                        
+
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                
+              
+            
+                </tbody>
+            </table>
+        </div>
+      </div>
+      </div>
+     
+     </div> <!-- Top-Statistic -->
+
+
+
+
+
+
+          </div> <!-- row -->
+
+
+          <!-------------------YOUR CONTENT HERE ENF ------------------>
+        </div>
+       
+    
+
+     
+    </main>
+  </div>
+</div>
+  <script src="./lib/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="./lib/popper.js/dist/popper.min.js"></script>
+  <script src="./lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./lib/metisMenu/dist/metisMenu.min.js" charset="utf-8"></script>
+  <script src="./lib/jquery-slimscroll/jquery.slimscroll.js" charset="utf-8"></script>
+  <script src="./js/datatables-ar.js" charset="utf-8"></script>
+   <script src="./js/sweetalert.js"></script>
+  <script src="./js/scripts.js" charset="utf-8"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('.my-form');
+  const inputs = form.querySelectorAll('input, select');
+  const generalError = document.getElementById('general-error');
+  const minInput = document.getElementById('min-amount');
+  const maxInput = document.getElementById('max-amount');
+  const offerInput = document.getElementById('offer-number');
+  const fromDateInput = document.getElementById('from-date');
+  const toDateInput = document.getElementById('to-date');
+  const recipientSelect = document.getElementById('recipient');
+
+
+  const today = new Date().toISOString().split('T')[0];
+  fromDateInput.setAttribute('max', today);
+  toDateInput.setAttribute('max', today);
+  // toDateInput.value = today;
+
+  recipientSelect.addEventListener('change', () => {
+    recipientSelect.classList.remove('success-border');
+    if (recipientSelect.value !== '') {
+      recipientSelect.classList.add('success-border');
+    }
+  });
+
+  inputs.forEach(input => {
+    if (input === maxInput) return;
+    input.addEventListener('input', () => {
+      generalError.classList.add('d-none');
+      validateInput(input);
+      if (input === minInput) validateInput(maxInput);
+    });
+  });
+
+  offerInput.addEventListener('blur', () => validateInput(offerInput));
+  maxInput.addEventListener('blur', () => validateInput(maxInput));
+
+  document.querySelector('.search-btn').addEventListener('click', function () {
+    const hasValue = Array.from(inputs).some(input => {
+      if (input.type === 'radio') {
+        return document.querySelector('input[name="available"]:checked');
+      } else {
+        return input.value.trim() !== '';
+      }
+    });
+
+    if (!hasValue) {
+      generalError.classList.remove('d-none');
+      return;
+    } else {
+      generalError.classList.add('d-none');
+    }
+      filterOffers();
+
+  });
+
+  function validateInput(input) {
+    const value = input.value.trim();
+    const errorSpan = input.nextElementSibling;
+    if (!errorSpan || !errorSpan.classList.contains('error')) return;
+
+    input.classList.remove('error-border', 'success-border');
+    errorSpan.textContent = '';
+
+    if (input === minInput) {
+      if (value !== '' && (!/^[1-9][0-9]*$/.test(value))) {
+        input.classList.add('error-border');
+        errorSpan.textContent = 'المبلغ غير صحيح';
+        return;
+      }
+    }
+
+    if (input === maxInput) {
+      const minValue = minInput.value.trim();
+      if (value !== '' && !/^[1-9][0-9]*$/.test(value)) {
+        input.classList.add('error-border');
+        errorSpan.textContent = 'المبلغ غير صحيح';
+        return;
+      } else if (value !== '' && minValue !== '' && Number(value) < Number(minValue)) {
+        input.classList.add('error-border');
+        errorSpan.textContent = '  اقل من الادنى';
+        return;
+      }
+    }
+
+    if (input === offerInput) {
+      if (value !== '' && !/^\d{6}$/.test(value)) {
+        input.classList.add('error-border');
+        errorSpan.textContent = 'رقم العرض يجب أن تكون 6 أرقام';
+        return;
+      }
+    }
+
+    if (input.type === 'date') {
+      if (fromDateInput.value && toDateInput.value && new Date(toDateInput.value) < new Date(fromDateInput.value)) {
+        toDateInput.classList.add('error-border');
+        toDateInput.nextElementSibling.textContent = 'التاريخ الى لا يجب أن يكون أقدم من التاريخ من';
+        return;
+      } else {
+        toDateInput.classList.remove('error-border');
+        toDateInput.classList.add('success-border');
+        toDateInput.nextElementSibling.textContent = '';
+      }
+    }
+
+    if (value !== '') input.classList.add('success-border');
+  }
+});
+</script>
+
+
+
+  
+<script>
+window.onload = function () {
+  displayOffersTable();
+};
+
+function displayOffersTable() {
+  const offers = JSON.parse(localStorage.getItem('offersList')) || [];
+  const tbody = document.querySelector("#example tbody");
+
+  tbody.innerHTML = ''; //     
+
+  offers.forEach(offer => {
+    const today = new Date();
+    const offerDate = new Date(offer.offerDate);
+    const expiryDate = new Date(offerDate);
+    expiryDate.setDate(offerDate.getDate() + parseInt(offer.offerDuration));
+
+    const isExpired = today > expiryDate;
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><a href="اضافة-عرض.html">${offer.offerNumber}</a></td>
+      <td>${formatDate(offer.offerDate)}</td>
+      <td>${offer.recipient}</td>
+      <td>${offer.totalAmount}</td>
+      <td class="${isExpired ? 'text-danger' : 'text-success'}">
+        ${isExpired ? 'غير متاح' : 'متاح'}
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// تحويل التاريخ من yyyy-mm-dd إلى dd-mm-yyyy
+function formatDate(dateStr) {
+  const [year, month, day] = dateStr.split("-");
+  return `${day} - ${month} - ${year}`;
+}
+</script>
+
+ <script>
+  function filterOffers() {
+  const offerNumber = document.getElementById('offer-number').value.trim();
+  const recipient = document.getElementById('recipient').value;
+  const minAmount = parseFloat(document.getElementById('min-amount').value.trim());
+  const maxAmount = parseFloat(document.getElementById('max-amount').value.trim());
+  const available = document.querySelector('input[name="available"]:checked')?.value;
+  const fromDate = document.getElementById('from-date').value;
+  const toDate = document.getElementById('to-date').value;
+
+  const offers = JSON.parse(localStorage.getItem('offersList')) || [];
+  const tbody = document.querySelector("#example tbody");
+  tbody.innerHTML = '';
+
+  const filtered = offers.filter(offer => {
+    if (offerNumber && offer.offerNumber !== offerNumber) return false;
+    if (recipient && offer.recipient !== recipient) return false;
+
+    const amount = parseFloat(offer.totalAmount);
+    if (!isNaN(minAmount) && amount < minAmount) return false;
+    if (!isNaN(maxAmount) && amount > maxAmount) return false;
+
+    const offerDateObj = new Date(offer.offerDate);
+    const fromDateObj = fromDate ? new Date(fromDate) : null;
+    const toDateObj = toDate ? new Date(toDate) : null;
+
+    if (fromDateObj && offerDateObj < fromDateObj) return false;
+    if (toDateObj && offerDateObj > toDateObj) return false;
+
+    if (available) {
+      const expiryDate = new Date(offerDateObj);
+      expiryDate.setDate(offerDateObj.getDate() + parseInt(offer.offerDuration));
+      const isExpired = new Date() > expiryDate;
+
+      if (available === 'yes' && isExpired) return false;
+      if (available === 'no' && !isExpired) return false;
+    }
+
+    return true;
+  });
+
+  if (filtered.length === 0) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td colspan="5" class="text-center text-muted">لا توجد نتائج مطابقة</td>`;
+    tbody.appendChild(tr);
+  } else {
+    filtered.forEach(offer => {
+      const offerDate = new Date(offer.offerDate);
+      const expiryDate = new Date(offerDate);
+      expiryDate.setDate(offerDate.getDate() + parseInt(offer.offerDuration));
+      const isExpired = new Date() > expiryDate;
+
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><a href="">${offer.offerNumber}</a></td>
+        <td>${formatDate(offer.offerDate)}</td>
+        <td>${offer.recipient}</td>
+        <td>${offer.totalAmount}</td>
+        <td class="${isExpired ? 'text-danger' : 'text-success'}">
+          ${isExpired ? 'غير متاح' : 'متاح'}
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+}
+
+ </script>
+ 
+
+  <script>
+    document.querySelector('.reset-btn').addEventListener('click', function () {
+  const form = document.querySelector('.my-form');
+  const inputs = form.querySelectorAll('input, select');
+  const errorMessages = form.querySelectorAll('.error-message');
+  
+  inputs.forEach(input => {
+    if (input.type === 'radio' || input.type === 'checkbox') {
+      input.checked = false;
+    } else {
+      input.value = '';
+    }
+
+    input.classList.remove('error-border', 'success-border');
+  });
+
+  errorMessages.forEach(msg => {
+    msg.classList.add('d-none');
+  });
+
+  const generalError = document.getElementById('general-error');
+  if (generalError) {
+    generalError.classList.add('d-none');
+  }
+
+  const tbody = document.querySelector("#example tbody");
+  tbody.innerHTML = '';
+});
+
+  </script>
+   
+   
+
+
+
+
+</body>
+
+</html>
